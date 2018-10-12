@@ -43,24 +43,6 @@ public class Controller {
     @FXML
     void initialize() {
         adverNaruj.setOnAction(event ->{
-            Data[] mas = {data.valueOf("BANER"), data.valueOf("PLENCA"), data.valueOf("PBANER"), data.valueOf("PPLENCA")};
-            System.out.println(mas[n]);
-            if (n == 0) {
-                double m2 = sizeX * sizeY;
-                sum = m2 * 150.0;
-                System.out.printf(m2 + "м2 " + sum + "-цена\n");
-            } else if (n == 1) {
-                double m2 = sizeX * sizeY;
-                sum = m2 * 160.0;
-                System.out.println(m2 + "м2 " + sum + "-цена\n");
-            } else if (n == 2) {
-                double m2 = sizeX * sizeY;
-                sum = m2 * 180.0;
-                System.out.println(m2 + "м2 " + sum + "-цена\n");
-            } else if (n == 3) {
-                double m2 = sizeX * sizeY;
-                sum = m2 * 165.0;
-                System.out.printf(m2 + "м2 " + sum + "-цена\n");
 
 
         });
