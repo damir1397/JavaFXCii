@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;">
+            <children>
+                <AnchorPane focusTraversable="true" layoutY="83.0" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="0.0">
+                    <children>
+                  <TextField editable="false" layoutX="124.0" layoutY="262.0" prefHeight="27.0" prefWidth="165.0" promptText="X" />
+                        <Label layoutX="170.0" layoutY="-7.0" opacity="0.29" prefHeight="57.0" prefWidth="366.0" text="Наружная реклама">
+                            <font>
+                                <Font name="Comic Sans MS" size="41.0" />
+                            </font>
+                        </Label>
+                  <TextField layoutX="129.0" layoutY="348.0" prefHeight="26.0" prefWidth="158.0" promptText="Y" />
+                  <Label layoutX="142.0" layoutY="311.0" text="Размер по Оси Y">
+                     <font>
+                        <Font name="Bookman Old Style" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="138.0" layoutY="225.0" prefHeight="27.0" prefWidth="198.0" text="Размер по Оси X">
+                     <font>
+                        <Font name="Bookman Old Style" size="22.0" />
+                     </font>
+                  </Label>
+                  <CheckBox layoutX="116.0" layoutY="82.0" mnemonicParsing="false" text="Торговых Центрах(100-1000/Охват)" />
+                  <CheckBox layoutX="116.0" layoutY="125.0" mnemonicParsing="false" text="Торгово-Развлекательных центрах(500-3000/Охват)" />
+                  <CheckBox layoutX="116.0" layoutY="165.0" mnemonicParsing="false" text="В общественном месте с широким охватом(1000-5000/Охват))  " />
+                  <Button layoutX="529.0" layoutY="361.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="94.0" text="Button">
+                     <font>
+                        <Font name="Bodoni MT Black" size="17.0" />
+                     </font>
+                  </Button>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </AnchorPane>
+                <Label layoutX="222.0" layoutY="2.0" prefHeight="64.0" prefWidth="315.0" text="Заказ Рекламы" textFill="WHITE">
+                    <font>
+                        <Font name="Mistral" size="56.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
