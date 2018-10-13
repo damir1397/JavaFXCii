@@ -15,7 +15,7 @@
     <children>
         <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;">
             <children>
-                <AnchorPane focusTraversable="true" layoutX="-1.0" layoutY="83.0" prefHeight="450.0" prefWidth="705.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="-1.0">
+                <AnchorPane fx:id="checkBoxD" focusTraversable="true" layoutX="-1.0" layoutY="83.0" prefHeight="450.0" prefWidth="705.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="-1.0">
                     <children>
                   <TextField fx:id="inputX" layoutX="456.0" layoutY="343.0" prefHeight="27.0" prefWidth="165.0" promptText="X" />
                         <Label layoutX="170.0" layoutY="-7.0" opacity="0.29" prefHeight="57.0" prefWidth="366.0" text="Наружная реклама">
@@ -34,59 +34,59 @@
                         <Font name="Bookman Old Style" size="15.0" />
                      </font>
                   </Label>
-                  <CheckBox layoutX="8.0" layoutY="95.0" mnemonicParsing="false" onAction="#checkBoxTS" text="Торговых Центрах(100-1000/Охват)">
+                  <CheckBox fx:id="checkBoxTS" layoutX="8.0" layoutY="95.0" mnemonicParsing="false" text="Торговых Центрах(100-1000/Охват)">
                      <font>
                         <Font size="11.0" />
                      </font></CheckBox>
-                  <CheckBox layoutX="8.0" layoutY="138.0" mnemonicParsing="false" onAction="#checkBoxTR" text="Торгово-Развлекательных центрах(500-3000/Охват)">
+                  <CheckBox fx:id="checkBoxTR" layoutX="8.0" layoutY="138.0" mnemonicParsing="false" text="Торгово-Развлекательных центрах(500-3000/Охват)">
                      <font>
                         <Font size="11.0" />
                      </font></CheckBox>
-                  <CheckBox layoutX="8.0" layoutY="178.0" mnemonicParsing="false" onAction="#checkBoxObsh" text="В общественном месте с широким охватом(1000-5000/Охват))  ">
+                  <CheckBox fx:id="checkBoxObsh" layoutX="8.0" layoutY="178.0" mnemonicParsing="false" text="В общественном месте с широким охватом(1000-5000/Охват))  ">
                      <font>
                         <Font size="11.0" />
                      </font></CheckBox>
-                  <CheckBox layoutX="9.0" layoutY="212.0" mnemonicParsing="false" onAction="#checkBoxTC" text="На транспортных средствах (100-500/Охват)">
+                  <CheckBox fx:id="checkBoxTC" layoutX="9.0" layoutY="212.0" mnemonicParsing="false" text="На транспортных средствах (100-500/Охват)">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="363.0" layoutY="85.0" mnemonicParsing="false" onAction="#checkBoxPPlenca" text="Демографические">
+                  <CheckBox fx:id="checkBoxDemog" layoutX="363.0" layoutY="85.0" mnemonicParsing="false" text="Демографические">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="363.0" layoutY="128.0" mnemonicParsing="false" text="Социальные">
+                  <CheckBox fx:id="checkBoxSocial" layoutX="363.0" layoutY="128.0" mnemonicParsing="false" text="Социальные">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="363.0" layoutY="168.0" mnemonicParsing="false" text="Географические">
+                  <CheckBox fx:id="checkBoxGograf" layoutX="363.0" layoutY="168.0" mnemonicParsing="false" text="Географические">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="363.0" layoutY="202.0" mnemonicParsing="false" text="Психологические">
+                  <CheckBox fx:id="checkBoxPsyh" layoutX="363.0" layoutY="202.0" mnemonicParsing="false" text="Психологические">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="92.0" layoutY="281.0" mnemonicParsing="false" onAction="#checkBoxBaner" text="Банер  150сом/м2">
+                  <CheckBox fx:id="checkBoxBaner" layoutX="92.0" layoutY="281.0" mnemonicParsing="false" text="Банер  150сом/м2">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="92.0" layoutY="324.0" mnemonicParsing="false" onAction="#checkBoxPlenca" text="Самоклеющаяся Пленка  160сом/м2">
+                  <CheckBox fx:id="checkBoxPlenca" layoutX="92.0" layoutY="324.0" mnemonicParsing="false" text="Самоклеющаяся Пленка  160сом/м2">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="92.0" layoutY="364.0" mnemonicParsing="false" onAction="#checkBoxPBaner" text="Перфа-Банер    180сом/м2">
+                  <CheckBox fx:id="checkBoxPBaner" layoutX="92.0" layoutY="364.0" mnemonicParsing="false" text="Перфа-Банер    180сом/м2">
                      <font>
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox layoutX="93.0" layoutY="398.0" mnemonicParsing="false" onAction="#checkBoxPPlenca" text="Самоклеющаяся Перфа-Пленка  165сом/м2">
+                  <CheckBox fx:id="checkBoxPPlenca" layoutX="93.0" layoutY="398.0" mnemonicParsing="false" text="Самоклеющаяся Перфа-Пленка  165сом/м2">
                      <font>
                         <Font size="11.0" />
                      </font>
