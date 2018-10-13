@@ -43,8 +43,31 @@ public class Controller {
     @FXML
     void initialize() {
         adverNaruj.setOnAction(event ->{
-
-
+            System.out.println("привет!");
+        });
+        adverPress.setOnAction(event ->{
+            System.out.println("привет мир!");
+        });
+        adverPrint.setOnAction(event ->{
+            System.out.println("привет!");
+        });
+        adverAudi.setOnAction(event ->{
+            System.out.println("привет!");
+        });
+        adverRadio.setOnAction(event ->{
+            System.out.println("привет!");
+        });
+        adverTelv.setOnAction(event ->{
+            System.out.println("привет!");
+        });
+        adverSuven.setOnAction(event ->{
+            System.out.println("привет!");
+        });
+        adverInter.setOnAction(event ->{
+            System.out.println("привет!");
+        });
+        adverMTS.setOnAction(event ->{
+            System.out.println("привет!");
         });
 
     }
