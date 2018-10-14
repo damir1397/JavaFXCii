@@ -67,6 +67,5 @@ public class AdverNaruj {
     @FXML
     void initialize() {
 
-
     }
 }
