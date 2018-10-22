@@ -11,23 +11,19 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DilogControler">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DialogControler">
     <children>
         <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;">
             <children>
-                <AnchorPane layoutX="7.0" layoutY="72.0" prefHeight="450.0" prefWidth="706.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="-7.0">
+                <AnchorPane layoutY="83.0" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="0.0">
                     <children>
-                        <Label layoutX="100.0" opacity="0.63" prefHeight="25.0" prefWidth="500.0" text="Опрос и рекомедации размещении рекламы">
+                        <Label layoutX="66.0" layoutY="-7.0" opacity="0.29" prefHeight="57.0" prefWidth="603.0" text="Опрос  и  рекомендации  размещении рекламы! ">
                             <font>
-                                <Font name="Comic Sans MS" size="23.0" />
+                                <Font name="Comic Sans MS" size="24.0" />
                             </font>
                         </Label>
-                  <TextArea fx:id="arrayText" layoutX="88.0" layoutY="42.0" prefHeight="408.0" prefWidth="458.0">
-                     <font>
-                        <Font name="System Bold Italic" size="12.0" />
-                     </font>
-                  </TextArea>
-                  <ImageView fitHeight="179.0" fitWidth="147.0" layoutX="546.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+                  <TextArea fx:id="textArray" layoutX="23.0" layoutY="50.0" prefHeight="361.0" prefWidth="479.0" />
+                  <ImageView fitHeight="197.0" fitWidth="171.0" layoutX="510.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../../../Downloads/bear.png" />
                      </image>
@@ -37,7 +33,7 @@
                         <Cursor fx:constant="DEFAULT" />
                     </cursor>
                 </AnchorPane>
-                <Label layoutX="222.0" layoutY="-12.0" prefHeight="64.0" prefWidth="315.0" text="Заказ Рекламы" textFill="WHITE">
+                <Label layoutX="222.0" layoutY="2.0" prefHeight="64.0" prefWidth="315.0" text="Заказ Рекламы" textFill="WHITE">
                     <font>
                         <Font name="Mistral" size="56.0" />
                     </font>
