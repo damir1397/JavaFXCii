@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Expert">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;">
+            <children>
+                <AnchorPane layoutY="89.0" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Button fx:id="output" layoutX="534.0" layoutY="382.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="Ответ" />
+                  <Label layoutX="21.0" layoutY="27.0" text="За какую сумму вы хотите разместить рекламу ? ">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="textFild" layoutX="63.0" layoutY="57.0" promptText="Ведите  сумму!" />
+                  <Label layoutX="32.0" layoutY="99.0" text="Где должна висеть ваша реклама ">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="checkBoxTS" layoutX="7.0" layoutY="125.0" mnemonicParsing="false" text="Торговых Центрах(100-1000/Охват)">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxTR" layoutX="7.0" layoutY="148.0" mnemonicParsing="false" text="Торгово-Развлекательных центрах(500-3000/Охват)">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxObsh" layoutX="7.0" layoutY="174.0" mnemonicParsing="false" text="В общественном месте с  охватом(1000-5000/Охват))  ">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxTC" layoutX="8.0" layoutY="200.0" mnemonicParsing="false" text="На транспортных средствах (100-500/Охват)">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxDemog" layoutX="8.0" layoutY="313.0" mnemonicParsing="false" text="Демографические">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxSocial" layoutX="8.0" layoutY="343.0" mnemonicParsing="false" text="Социальные">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxGograf" layoutX="8.0" layoutY="372.0" mnemonicParsing="false" text="Географические">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxPsyh" layoutX="8.0" layoutY="399.0" mnemonicParsing="false" text="Психологические">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="34.0" layoutY="286.0" text="Целевая аудитория ">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="356.0" layoutY="27.0" text="По целевой направленности">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <CheckBox fx:id="checkBoxInfo" layoutX="338.0" layoutY="54.0" mnemonicParsing="false" text="Информационные – для рекламы нового продукта">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxUvishy" layoutX="339.0" layoutY="81.0" mnemonicParsing="false" text="Увещевательные – для быстрого потребления товара или услуги">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxNapomin" layoutX="341.0" layoutY="110.0" mnemonicParsing="false" text="Напоминающие – для поддержания продаж.">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkBoxRegion" layoutX="9.0" layoutY="227.0" mnemonicParsing="false" text="В регионах (100-600/Охват)">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </CheckBox>
+                    </children>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </AnchorPane>
+                <Label layoutX="222.0" layoutY="2.0" prefHeight="64.0" prefWidth="315.0" text="Заказ Рекламы" textFill="WHITE">
+                    <font>
+                        <Font name="Mistral" size="56.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
