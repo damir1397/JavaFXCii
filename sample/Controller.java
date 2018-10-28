@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 
 public class Controller {
-    public static boolean exit = true;
+
     @FXML
     private ResourceBundle resources;
 
@@ -62,7 +62,7 @@ public class Controller {
         });
         adverNaruj.setOnAction(event ->{
             windomAdd("View/add.fxml");
-            });
+        });
 
         adverPrint.setOnAction(event ->{
             windomAdd("View/adverPrint.fxml");

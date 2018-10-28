@@ -16,15 +16,18 @@
     <children>
         <AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;">
             <children>
-                <AnchorPane layoutY="89.0" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="0.0">
+                <AnchorPane layoutY="82.0" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #FFFAF0;" AnchorPane.rightAnchor="0.0">
                     <children>
-                        <Button fx:id="output" layoutX="534.0" layoutY="382.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="113.0" text="Ответ" />
+                        <Button fx:id="output" layoutX="196.0" layoutY="49.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="85.0" style="-fx-background-color: #FF6600;" text="Ответ" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Button>
                   <Label layoutX="21.0" layoutY="27.0" text="За какую сумму вы хотите разместить рекламу ? ">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="textFild" layoutX="63.0" layoutY="57.0" promptText="Ведите  сумму!" />
+                  <TextField fx:id="textFild" layoutX="37.0" layoutY="57.0" promptText="Ведите  сумму!" />
                   <Label layoutX="32.0" layoutY="99.0" text="Где должна висеть ваша реклама ">
                      <font>
                         <Font name="System Bold" size="13.0" />
@@ -101,6 +104,11 @@
                      </font>
                   </CheckBox>
                   <TextArea fx:id="dialogP" layoutX="341.0" layoutY="135.0" prefHeight="230.0" prefWidth="349.0" />
+                  <Button fx:id="viewButton" layoutX="353.0" layoutY="378.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="280.0" style="-fx-background-color: #ff9600;" text="Получить Ответ! " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="27.0" />
+                     </font>
+                  </Button>
                     </children>
                     <cursor>
                         <Cursor fx:constant="DEFAULT" />

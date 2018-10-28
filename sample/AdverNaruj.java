@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-
+import javafx.scene.control.TextArea;
 public class AdverNaruj {
 
     @FXML
@@ -64,8 +64,62 @@ public class AdverNaruj {
     @FXML
     private Button buttonZac;
 
+    public double sum=0;
+    @FXML
+    private TextArea textArea;
+
     @FXML
     void initialize() {
 
+
+        buttonZac.setOnAction(event -> {
+           double sizeX = Double.parseDouble(inputX.getText());
+            double sizeY = (float) Double.parseDouble(inputY.getText());
+            if (checkBoxBaner.isSelected()) {
+                double m2 = sizeX * sizeY;
+                sum = m2 * 150.0;
+                textArea.appendText(m2 + "м2 " + sum + "-цена\n");
+            } else if (checkBoxPlenca.isSelected()) {
+                double m2 = sizeX * sizeY;
+                sum = m2 * 160.0;
+                textArea.appendText(m2 + "м2 " + sum + "-цена\n");
+            } else if (checkBoxPBaner.isSelected()) {
+                double m2 = sizeX * sizeY;
+                sum = m2 * 180.0;
+                textArea.appendText(m2 + "м2 " + sum + "-цена\n");
+            } else if (checkBoxPPlenca.isSelected()) {
+                double m2 = sizeX * sizeY;
+                sum = m2 * 165.0;
+                textArea.appendText(m2 + "м2 " + sum + "-цена\n");
+            }
+        });
     }
-}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
