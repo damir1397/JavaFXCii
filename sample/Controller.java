@@ -10,10 +10,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
-import static java.lang.Integer.parseInt;
 
 public class Controller {
     public static boolean exit = true;
@@ -73,19 +71,19 @@ public class Controller {
             windomAdd("View/adverAudi.fxml");
         });
         adverRadio.setOnAction(event ->{
-            windomAdd("View/adver.fxml");
+            windomAdd("View/adverRadio.fxml");
         });
         adverTelv.setOnAction(event ->{
-            windomAdd("View/add.fxml");
+            windomAdd("View/adverTelv.fxml");
         });
         adverSuven.setOnAction(event ->{
-            windomAdd("View/add.fxml");
+            windomAdd("View/adverSuven.fxml");
         });
         adverInter.setOnAction(event ->{
-            windomAdd("View/add.fxml");
+            windomAdd("View/adverInter.fxml");
         });
         adverMTS.setOnAction(event ->{
-            windomAdd("View/add.fxml");
+            windomAdd("View/adverMTS.fxml");
         });
 
 

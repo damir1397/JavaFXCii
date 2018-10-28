@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -99,6 +100,7 @@
                         <Font size="11.0" />
                      </font>
                   </CheckBox>
+                  <TextArea fx:id="dialogP" layoutX="341.0" layoutY="135.0" prefHeight="230.0" prefWidth="349.0" />
                     </children>
                     <cursor>
                         <Cursor fx:constant="DEFAULT" />

@@ -3,10 +3,11 @@ package sample;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
-
+import javafx.scene.control.TextArea;
 import static java.lang.Integer.parseInt;
 
 public class Expert extends Controller {
@@ -20,8 +21,6 @@ public class Expert extends Controller {
     @FXML
     private Button output;
 
-    @FXML
-    private TextField textFild;
 
     @FXML
     private CheckBox checkBoxTS;
@@ -58,48 +57,62 @@ public class Expert extends Controller {
 
     @FXML
     private CheckBox checkBoxRegion;
+    @FXML
+    private TextField textFild;
+
+    @FXML
+    private TextArea dialogP;
 
     @FXML
     void initialize() {
+
         output.setOnAction(event -> {
-            int mas[]={ 100, 500,   5000,//1
+            int mas[] = {100, 500, 5000,//1
                     250, 6400, 50000,//2
-                    100, 700,  10000,//3
+                    100, 700, 10000,//3
                     500, 3000, 15000,//4
                     500, 7000, 20000,//5
-                    3000,8000, 40000,//6
-                    300, 1000,  6000,//7
-                    100, 500,   5000,//8
-                    50,  300,   1000};//9
+                    3000, 8000, 40000,//6
+                    300, 1000, 6000,//7
+                    100, 500, 5000,//8
+                    500, 300, 1000};//9
 
-            for(int i=0;i<mas.length;i++) {
+
+            for ( int i = 0; i < mas.length; i+=5) {
                 if (mas[i] <= parseInt(textFild.getText())) {
                     if (i == 0 || i == 1 || i == 2) {
-                   windomAdd("View/add.fxml");
+                        dialogP.appendText("0::Рекламма на прессе\n");
                     } else if (i == 3 || i == 4 || i == 5) {
-                        System.out.println("Наружная реклама\n");
+                        dialogP.appendText("1::Наружная реклама\n");
                     } else if (i == 6 || i == 7 || i == 8) {
-                        System.out.println("Печатная реклама\n\n");
+                        dialogP.appendText("2::Печатная реклама\n");
                     } else if (i == 9 || i == 10 || i == 11) {
-                        System.out.println("Аудиовизуальная реклама\n");
+                        dialogP.appendText("3::Аудиовизуальная реклама\n");
                     } else if (i == 12 || i == 13 || i == 14) {
-                        System.out.println("Радиореклама \n");
+                        dialogP.appendText("4::Радиореклама\n");
                     } else if (i == 15 || i == 16 || i == 17) {
-                        System.out.println("Телевизионная реклама \n");
+                        dialogP.appendText("5::Телевизионная реклама \n");
                     } else if (i == 18 || i == 19 || i == 20) {
-                        System.out.println("Рекламные сувениры  \n");
+                        dialogP.appendText("6::Рекламные сувениры\n");
                     } else if (i == 21 || i == 22 || i == 23) {
-                        System.out.println("Интернет-реклама  \n");
-                    } else if (i == 24 || i == 25 || i == 26) {
-                        System.out.println("Реклама на МТС  \n");
+                        dialogP.appendText("7::Интернет-реклама \n");
+                    } else if (i == 24 || i == 25 ) {
+                        dialogP.appendText("8::Реклама на МТС\n");
                     }
-
                 }
-            }
-            });
-         /*;
+                }
+            dialogP.appendText("Выберите из этих вариантов !");
+            String text=dialogP.getText();
+              if (text.equals("1")) {
 
-        checkBoxTR ;
+            }
+
+            });
+
+
+
+
+        /*;
          checkBoxObsh  ;
          checkBoxTC   ;
          checkBoxDemog  ;
